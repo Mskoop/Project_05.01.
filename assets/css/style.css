@@ -1,133 +1,294 @@
+/* ================
+Fonts
+=================== */
 
-/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff
-Fonts: Graphik, TiemposHeadline, Theinhardt   */
+@font-face {
+    font-family: 'Graphik-medium';
+    src: url(../fonts/Graphik-Medium.ttf);
+}
+@font-face {
+    font-family: 'Graphik-regular';
+    src: url(../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+    font-family: 'TiemposHeadline';
+    src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+@font-face {
+    font-family: 'Theinhardt';
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+/* 
+===================
+Farben:
+ #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff;
+ ===================*/
+
 
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
+/* ===============
+Header Bereich
+================== */
 .section1 {
     background-image: url(../grafics/home_hero.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vh; 
 }
 
 .nav {
-    /* background-color: rgb(211, 204, 204); */
     display: flex;
     align-items: center;
     padding-right: 3rem;
     padding: 0.3rem;
 }
 .nav a {
+    font-family: Graphik-regular;
     text-decoration: none;
     padding-left:2rem;
     color:black;
 }
-header nav :nth-of-type(5) {
+header nav a:last-of-type {
     margin-left:auto;
     font-size: 1.2rem;
     border: 1px solid black;
-    padding: 0.3rem 1.5rem;
+    padding: 0.4rem 1.8rem;
+    font-family: Graphik-medium;
     color:black;
-        margin-right: 2rem;
+    margin-right: 2rem;
 }
+header nav a:hover:last-of-type {
+    background-color: black;
+    color:white;
+}
+
 .nav_mitte {
+    font-family: 'TiemposHeadline';
     font-size: 1.5rem;
     margin-inline:auto;
 }
+
 .mainslogan {
-    /* background-color:  rgb(211, 204, 204); */
+    font-family: 'Graphik-regular';
     text-align: center;
     font-size: 2.2rem;
     margin: 4rem 6rem 0 6rem;
+
 }
+/* ===========
+SECTION 2
+=============== */
+
 .section2 {
     display:flex;
-    
 }
+
 .article1 {
+    font-family: 'Graphik-medium';
     display:flex;
     width: 45%;
-    background-color: beige;
     margin: 5rem 4rem;
     line-height: 1.5rem;
 }
+
 .article2 {
+    font-family: 'Theinhardt';
     width: 20%;
-    background-color: beige;
     margin: 5rem 0 5rem 15rem;
 }
+
 .article2 p:nth-of-type(1) {
     font-size: 3rem;
 }
+
+/* ============
+SECTION 3 *
+==============/*/
 .section3 {
     display: flex;
     justify-content: space-evenly;
-   /*  margin-left: 100px; */
-}
+   }
+
 .rabbit img{
-   display:flex;
-   background-position: center;
+    display:flex;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 45vw;
-
-    /* padding: 2rem; */
-    /*  background-color: greenyellow;  */
 }
-/* .rabbit {
-    width: 50%;
-} */
+
 .rabbittext {
-    /* background-color: #777; */
     width: 50%;
     padding: 2rem 0;
     margin:1rem;
-   /*  margin-right: 3rem; */
 }
+
 .rabbittext h1 {
+    font-family: 'TiemposHeadline';
     font-size:3rem;
     margin-bottom: 2.5rem;
 }
+
 .rabbittext h3 {
-margin-bottom: 0.5rem;
+    font-family: 'Graphik-medium';
+    margin-bottom: 0.5rem;
 }
 .rabbittext p {
+    font-family: 'Theinhardt';
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+/* ============
+SECTION 4 
+==============*/
+
 .section4 {
     background-color: #dadde3;
     margin: 0 3rem;
     display:flex;
-   
+    padding-bottom: 3rem;
 }
-.howitworks {
-width: 50%;
-padding: 2rem;
 
+.howitworks {
+    width: 50%;
+    padding: 2rem;
 }
+
 .section4 img {
-    /* background-color: aquamarine; */
-    display:flex;
+    display: flex;
     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 45vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45vw;
 }
+
 .howitworks h1 {
+    font-family: 'TiemposHeadline';
     font-size: 4rem;
     margin-bottom:1.5rem;
 }
+
 li {
+    font-family: 'Theinhardt';
     margin-left:2rem;
 }
+
 .howitworks p {
+    font-family: 'Theinhardt';
     margin-bottom: 2rem;
     width: 90%;
+}
+
+/* ===============
+SECTION 5
+================== */
+
+.section5 {
+    text-align: center;
+    margin-bottom:4rem;
+}
+
+.section5 h1 {
+    font-family:'TiemposHeadline';
+    margin-top: 5rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.section5 p {
+    font-family: 'Theinhardt';
+    margin-left:15rem;
+    margin-right: 15rem;
+}
+
+/* ==========
+SECTION 6
+============ */
+
+.section6 {
+    background-image: url(../grafics/28.png);
+    display:flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+}
+
+.article6 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin-top: 20rem;
+}
+
+.text-left {
+    font-family: 'Graphik-medium';
+    display:flex;
+    width: 25vw;
+    line-height: 2rem;
+    margin-left: 1rem;
+    font-size:0.9rem;
+    }
+
+.sitingman{
+    background-image: url(../grafics/home_conversion.png);
+    display:flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    bottom: 1vh;
+    left: 24rem;
+    width: 40vw;
+    height: 37vh;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    margin-top:12rem;
+    margin-left: 10rem;
+    margin-right:10rem;
+}
+
+.section7 {
+    text-align: center;
+}
+
+.haveany {
+    text-align: center;
+    font-size: 3rem;
+    margin-top:3rem;
+    margin-bottom: 3rem; 
+}
+/* =============
+Footer
+================= */
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.3rem;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer a {
+    font-family: 'Graphik-medium';
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:black;
 }
